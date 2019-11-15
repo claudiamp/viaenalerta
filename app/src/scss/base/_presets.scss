@@ -1,0 +1,146 @@
+html {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+body {
+    @extend html;
+    background: white;
+    min-height: 100%;
+    overflow: auto;
+}
+
+html,body{
+    font-family: $base-font-family;
+}
+
+li{
+    list-style: none;
+}
+//estilos exclusivo para el uso de wordpress y no usar un p en maquetado !
+p {
+    color: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+        text-decoration: none;
+        outline: 0;
+        color: white;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    &::before,
+    &::after {
+        @extend *;
+    }
+}
+
+
+input{
+    outline-color: transparent;
+    &:focus,
+    &:active{
+        outline-color: transparent;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.verde {
+    background: $verde-o;
+}
+
+.fucsia {
+    background: $fucsia;
+}
+
+.yellow {
+    background: $yellow;
+}
+
+.ambar {
+    background: $ambar;
+}
+
+@mixin circle($circleSize) {
+  width: $circleSize;
+  height: $circleSize;
+  border-radius: $circleSize/2;
+}
+/* pulse in SVG */
+svg.pulse-svg {
+  overflow: visible;
+  .first-circle {
+    fill: #f00;
+    transform: scale(0.5);
+    transform-origin: center center;
+    animation: pulse-me 3s linear infinite;
+  }
+  .second-circle {
+    @extend .first-circle;
+    animation-delay: 1s;
+  }
+  .third-circle {
+    @extend .first-circle;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.fb-comments {
+  iframe {
+    width: 100%;
+  }
+
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.owl-verification {
+  .item {
+    img {
+      display: block;
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

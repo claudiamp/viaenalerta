@@ -1,0 +1,43 @@
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='shortcut icon', href='https://spda.org.pe/wp-content/uploads/2017/12/favicon-16x16.png' type="image/png")
+        title VÍA EN ALERTA
+
+        link(rel='canonical', href='https://spda.org.pe/')
+        link(rel='shortlink', href='https://spda.org.pe/')
+
+        meta(name='description', content='Sociedad Peruana de Derecho Ambiental')
+        meta(name='keywords', content='Sociedad Peruana de Derecho Ambiental')
+        meta(name='author', content='CALEIDOS | Diseño y Tecnología que Transforma')
+        meta(name='urlSite', content='https://spda.org.pe/')
+
+
+        link(rel='stylesheet', href='css/bootstrap.min.css?v=2')
+        link(rel='stylesheet', href='https://kenwheeler.github.io/slick/slick/slick.css')
+        link(rel='stylesheet', href='css/style.css?v=2')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800&display=swap')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+            
+    body
+        block content
+        
+        script(src='https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.9')
+        script(src="https://kenwheeler.github.io/slick/slick/slick.js")
+        script.
+            $(document).ready(function(){
+
+                $(".clickShow").click(function(){
+                    $(".js__overlay").addClass("hidden");
+                    $("body").css("overflow","auto");
+                })
+
+            });
+
+        script(src='js/main.js?v=2')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')

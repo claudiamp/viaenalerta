@@ -1,0 +1,250 @@
+extends layout
+block content
+   
+    include blocks/header
+    
+
+    .alertas__emi
+        .container
+            a(href="index.html").btn.btn-back.alertas__emi--back
+                i.icon-back
+                | VOLVER
+            .row
+                .col-md-5
+                    .alertas__emi--info
+                        .leyenda__icon.alto
+                        span ALERTA 0001 
+
+                        .row
+                            .col-md-6
+                                p
+                                    strong Detectada desde
+                            .col-md-6
+                                p 2019 - 09 - 18
+                        .row
+                            .col-md-6
+                                p
+                                    strong Ubicación
+                            .col-md-6
+                                p Perú
+                                p Loreto
+                                p Iquitos
+                                p Nanay
+                        .row
+                            .col-md-6
+                                p
+                                    strong Tipo
+                            .col-md-6
+                                p Bosques de Producción Permanente
+                        .row
+                            .col-md-6
+                                p
+                                    strong Área
+                            .col-md-6
+                                p 44 ha
+                        .row
+                            .col-md-6
+                                p
+                                    strong Coordenada inicial
+                            .col-md-6
+                                p -3.638049, -73.228663
+                    
+                        .alertas__emi--info-buttons
+                            a.btn.btn--green-w(href="") ABRIR EN GOOGLE MAPS
+                            a.btn.btn--green(href="") DESCARGAR ALERTA
+                .col-md-7
+                    .slider-section
+                        .slider-box
+                            .slider-gallery
+                                .slider-gallery__images
+                                    div.gallery-images
+                                        .gallery-img
+                                            .gallery-img__item
+                                                img(src="img/areas/1.jpg", alt="img1")
+                                        .gallery-img
+                                            .gallery-img__item
+                                                img(src="img/areas/2.jpg", alt="img2")
+                                        .gallery-img
+                                            .gallery-img__item
+                                                img(src="img/areas/3.jpg", alt="img3")
+                                        .gallery-img
+                                            .gallery-img__item
+                                                img(src="img/areas/4.jpg", alt="img4")
+                                        .gallery-img
+                                            .gallery-img__item
+                                                img(src="img/areas/1.jpg", alt="img1")
+                                .slider-gallery__thumbnails
+                                    .gallery-thumbnail__box
+                                        div
+                                            .gallery-thumbnail
+                                                .gallery-thumbnail__item
+                                                    img(src="img/areas/1.jpg", alt="img1")
+                                            .gallery-thumbnail
+                                                .gallery-thumbnail__item
+                                                    img(src="img/areas/2.jpg", alt="img2")
+                                            .gallery-thumbnail
+                                                .gallery-thumbnail__item
+                                                    img(src="img/areas/3.jpg", alt="img3")
+                                            .gallery-thumbnail
+                                                .gallery-thumbnail__item
+                                                    img(src="img/areas/4.jpg", alt="img4")
+                                            .gallery-thumbnail
+                                                .gallery-thumbnail__item
+                                                    img(src="img/areas/1.jpg", alt="img1")
+                                    button.prev-arrow.slick-arrow
+                                        <svg width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 1.33313L2.41421 15.9189C1.63316 16.7 1.63317 17.9663 2.41421 18.7473L17 33.3331" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+
+                                    button.next-arrow.slick-arrow
+                                        <svg width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 33.3331L15.5858 18.7473C16.3668 17.9663 16.3668 16.7 15.5858 15.9189L1 1.33313" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+
+
+
+
+            .alertas__emi--verification
+                h3 VERIFICACIÓN EN SITIO CONTRIBUIDA POR USUARIOS
+                .alertas__emi--verification-carousel
+                    .owl-carousel.owl-theme.owl-verification
+                        .item
+                            img(src="img/lugar/1.png", alt="")
+                        .item
+                            img(src="img/lugar/2.png", alt="")
+                        .item
+                            img(src="img/lugar/3.png", alt="")
+                        .item
+                            img(src="img/lugar/4.jpg", alt="")
+                        .item
+                            img(src="img/lugar/5.jpg", alt="")
+                        .item
+                            img(src="img/lugar/6.jpg", alt="")
+                        .item
+                            img(src="img/lugar/7.jpg", alt="")
+                        .item
+                            img(src="img/lugar/8.jpg", alt="")
+                        .item
+                            img(src="img/lugar/9.png", alt="")
+                        .item
+                            img(src="img/lugar/10.png", alt="")
+                    .alertas__emi--verification-arrows.arrow-left
+                        img(src="img/icon/arrow.png", alt="")
+                    .alertas__emi--verification-arrows.arrow-right
+                        img(src="img/icon/arrow.png", alt="")
+
+            .alertas__emi--entidad
+                .row.alertas__emi--entidad-head
+                    .col-md-2.pl-0
+                        p INSTITUCIONES RELACIONADAS
+                    .col-md-2
+                        p MOTIVO
+                    .col-md-4
+                        p INFORMACIÓN RELACIONADA
+                    .col-md-3
+                        p NOTIFICACIÓN ENVIADA
+                    .col-md-1
+                        p ESTADO
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p(style="font-weight: 500;") SERFOR
+                        p(style="font-size: 14px; font-weight: normal;") Servicio Nacional Forestal y de Fauna Silvestre
+                    .col-md-2
+                        p Evalúa desbosques Conserva el recurso forestal y plantaciones forestales
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.white
+                            .circle
+                            p Hemos verificado que esta carretera no cuenta con lorem ipsum dolor sit amet, se puede verificar la información en www.serfor.com/registros/lorem ipsum
+                    .col-md-3
+                        p informes@serfor.gob.pe
+                        p jpantigoso@serfor.gob.pe
+                        p msalazar@serfor.gob.pe
+                    .col-md-1
+                        span.recibido Recibido
+                        span.leido Leido
+                        span.leido Leido
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p(style="font-weight: 500;") OSINFOR
+                        p(style="font-size: 14px; font-weight: normal;") Organismo de Supervisión de los Recursos Forestales y de Fauna Silvestre
+                    .col-md-2
+                        p Verificación en campo Trabajo con comunidades
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.green
+                            p Si cuenta con información relacionada y comprobable ingrésala aquí
+                    .col-md-3
+                        p atencionalciudadano@osinfor.gob.pe
+                    .col-md-1
+                        span.leido Leído
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p(style="font-weight: 500;") PNCBMCC
+                        p(style="font-size: 14px; font-weight: normal;") Programa Nacional de Conservación de Bosques para la Mitigación del Cambio Climático
+                    .col-md-2
+                        p Incentiva comunidades para conservar bosques
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.green
+                            p Si cuenta con información relacionada y comprobable ingrésala aquí
+                    .col-md-3
+                        p bosques@bosques.gob.pe
+                    .col-md-1
+                        span.recibido Recibido 
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p(style="font-weight: 500;") FEMA
+                        p(style="font-size: 14px; font-weight: normal;") Fiscalía Especializada en Medio Ambiente
+                    .col-md-2
+                        p Apertura proceso de investigación
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.green
+                            p Si cuenta con información relacionada y comprobable ingrésala aquí
+                    .col-md-3
+                        p coordinacion-fema@mpfn.gob.pe 
+                        p coordinacionfema@gmail.com
+                    .col-md-1
+                        span.Recibido Recibido 
+                        span.Recibido Recibido 
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p(style="font-weight: 500;") SNCVFFS
+                        p(style="font-size: 14px; font-weight: normal;") Sistema Nacional de Control y Vigilancia de Flora y Fauna Silvestre
+                    .col-md-2
+                        p Coordina agencias gubernamentales nacionales
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.green
+                            p Si cuenta con información relacionada y comprobable ingrésala aquí
+                    .col-md-3
+                        p 
+                    .col-md-1
+                .row.alertas__emi--entidad-row
+                    .col-md-2.pl-0
+                        p Gobierno Regional de Loreto
+                    .col-md-2
+                        p Maneja recursos forestales en Loreto
+                    .col-md-4
+                        .alertas__emi--entidad-row-box.green
+                            p Si cuenta con información relacionada y comprobable ingrésala aquí
+                    .col-md-3
+                        p infogorel@regionloreto.gob.pe.
+                    .col-md-1
+                        span.recibido Recibido  
+            .alertas__emi--social
+                .row
+                    .col-md-6
+                        .alertas__emi--social-content
+                            h3 COMENTARIOS
+                            a.btn.btn--green-w(href="") Únete a la conversación
+                            .alertas__emi--entidad-row-box.white
+                                .circle
+                                p Hemos verificado que esta carretera no cuenta con certificación ambiental, se puede verificar la información en www. serfor.com/registros/lorem.
+                            .alertas__emi--entidad-row-box.white
+                                .circle
+                                p Hemos verificado que esta carretera no cuenta con certificación ambiental, se puede verificar la información en www. serfor.com/registros/lorem.
+                            .alertas__emi--entidad-row-box.white
+                                .circle
+                                p Hemos verificado que esta carretera no cuenta con certificación ambiental, se puede verificar la información en www. serfor.com/registros/lorem.
+                            .alertas__emi--entidad-row-box.white
+                                .circle
+                                p Hemos verificado que esta carretera no cuenta con certificación ambiental, se puede verificar la información en www. serfor.com/registros/lorem.
+                    .col-md-6
+                        img.img-fluid(src="img/twitter.png", alt="")

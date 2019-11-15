@@ -1,0 +1,38 @@
+//colors
+
+$celeste: #2CBFDF;
+$gris: #898989;
+$azul: #2574E0;
+$verde-o: #2CA745;
+$yellow: #E6D60F;
+$verde-c: #53B968;
+$fucsia: #DC3545;
+$ambar: #EE9C17;
+$purple: #6c40ab;
+
+
+//fonts
+
+$base-font-family: 'Roboto', sans-serif;
+$roboto: $base-font-family;
+
+$barlo: 'Barlow', sans-serif;;
+
+//sizes
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xlg-min: 1370px;
+
+
+$index-sidebar: 1000;
+
+$container: 1160px;
+
+svg {
+    pointer-events: none;
+  }
+  path {
+    pointer-events: all;
+  }

@@ -1,0 +1,50 @@
+.leyenda{
+    &__icon{
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background: green;
+        border-radius: 50%;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            top: 50%;
+            margin-top: -4px;
+            left: 50%;
+            margin-left: -4px;
+            background: red;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            top: 50%;
+            margin-top: -1px;
+            left: 50%;
+            margin-left: -1px;
+            background: yellow; 
+            z-index: 1;     
+        }
+
+        &.alto {
+            background: rgba(220, 53, 69, .31);
+
+            &:before {
+                background: #DC3545;
+            }
+
+            &:after {
+                background: #DC3545;
+            }
+        }
+
+    }
+}

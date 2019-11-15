@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//base
+@import "base/_config",
+        "base/_icons",
+        "base/_fonts",
+        "base/_media",
+        "base/_presets";
+        
+//components
+@import "components/button",
+        "components/point",
+        "components/overlay",
+        "components/leyenda",
+        "components/alertas",
+        "components/slider";
+
+// block
+@import "blocks/footer",
+        "blocks/header";
+
+
+//layout
+
+//vendor
+@import "vendor/_icomoon",
+        "vendor/_owl";
+        
